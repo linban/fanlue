@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7B3BAEC5-D12F-4E77-BCD0-2005543ADD9A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>鸟类图鉴</RootNamespace>
+    <AssemblyName>鸟类图鉴</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="鸟类图鉴\目录\卷羽鹈鹕ml.png" />
+    <Resource Include="鸟类图鉴\目录\右翻页.png" />
+    <Resource Include="鸟类图鉴\目录\右翻页hb.png" />
+    <Resource Include="鸟类图鉴\目录\小䴙䴘ml.png" />
+    <Resource Include="鸟类图鉴\目录\左翻页.png" />
+    <Resource Include="鸟类图鉴\目录\左翻页hb.png" />
+    <Resource Include="鸟类图鉴\目录\棉凫 ml.png" />
+    <Resource Include="鸟类图鉴\目录\白秋沙鸭ml.png" />
+    <Resource Include="鸟类图鉴\目录\目录效果图.png" />
+    <Resource Include="鸟类图鉴\目录\绿头鸭ml.png" />
+    <Resource Include="鸟类图鉴\目录\背景.png" />
+    <Resource Include="鸟类图鉴\目录\苇鹀ml.png" />
+    <Resource Include="鸟类图鉴\目录\草鹭 ml.png" />
+    <Resource Include="鸟类图鉴\目录\返回按钮.png" />
+    <Resource Include="鸟类图鉴\目录\选项位置参考.png" />
+    <Resource Include="鸟类图鉴\目录\页面元素1.png" />
+    <Resource Include="鸟类图鉴\详情\卷羽鹈鹕t.png" />
+    <Resource Include="鸟类图鉴\详情\卷羽鹈鹕z.png" />
+    <Resource Include="鸟类图鉴\详情\小䴙䴘t.png" />
+    <Resource Include="鸟类图鉴\详情\小䴙䴘z.png" />
+    <Resource Include="鸟类图鉴\详情\小鸟装饰.png" />
+    <Resource Include="鸟类图鉴\详情\棉凫t.png" />
+    <Resource Include="鸟类图鉴\详情\棉凫z.png" />
+    <Resource Include="鸟类图鉴\详情\点2.png" />
+    <Resource Include="鸟类图鉴\详情\电1.png" />
+    <Resource Include="鸟类图鉴\详情\白秋沙鸭t.png" />
+    <Resource Include="鸟类图鉴\详情\白秋沙鸭z.png" />
+    <Resource Include="鸟类图鉴\详情\绿头鸭t.png" />
+    <Resource Include="鸟类图鉴\详情\绿头鸭z.png" />
+    <Resource Include="鸟类图鉴\详情\背景.png" />
+    <Resource Include="鸟类图鉴\详情\苇鹀t.png" />
+    <Resource Include="鸟类图鉴\详情\苇鹀z.png" />
+    <Resource Include="鸟类图鉴\详情\草鹭t.png" />
+    <Resource Include="鸟类图鉴\详情\草鹭z.png" />
+    <Resource Include="鸟类图鉴\详情\详情页效果图.png" />
+    <Resource Include="鸟类图鉴\详情\返回按钮.png" />
+    <Resource Include="鸟类图鉴\详情\页面装饰1.png" />
+    <Resource Include="鸟类图鉴\详情\页面装饰2.png" />
+    <Resource Include="鸟类图鉴\首页\元素1.png" />
+    <Resource Include="鸟类图鉴\首页\元素2.png" />
+    <Resource Include="鸟类图鉴\首页\元素3.png" />
+    <Resource Include="鸟类图鉴\首页\元素4.png" />
+    <Resource Include="鸟类图鉴\首页\元素5.png" />
+    <Resource Include="鸟类图鉴\首页\卷羽鹈鹕sy.png" />
+    <Resource Include="鸟类图鉴\首页\小䴙䴘sy.png" />
+    <Resource Include="鸟类图鉴\首页\棉凫sy.png" />
+    <Resource Include="鸟类图鉴\首页\白秋沙鸭sy.png" />
+    <Resource Include="鸟类图鉴\首页\绿头鸭sy.png" />
+    <Resource Include="鸟类图鉴\首页\背景.png" />
+    <Resource Include="鸟类图鉴\首页\苇鹀sy.png" />
+    <Resource Include="鸟类图鉴\首页\草鹭sy.png" />
+    <Resource Include="鸟类图鉴\首页\页面装饰1.png" />
+    <Resource Include="鸟类图鉴\首页\页面装饰2.png" />
+    <Resource Include="鸟类图鉴\首页\首页按钮.png" />
+    <Resource Include="鸟类图鉴\首页\首页效果图.png" />
+    <Resource Include="鸟类图鉴\首页\首页标题.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

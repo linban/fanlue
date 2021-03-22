@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE7C86AC-4A40-40EA-9E46-7C31AF061C67}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>草木之诗</RootNamespace>
+    <AssemblyName>草木之诗</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cover.avi" />
+    <Resource Include="野草之智（待机页是一个视频）\back.png" />
+    <Resource Include="野草之智（待机页是一个视频）\圆角矩形 580.png" />
+    <Resource Include="野草之智（待机页是一个视频）\智小标题.png" />
+    <Resource Include="野草之智（待机页是一个视频）\杠板归ml.png" />
+    <Resource Include="野草之智（待机页是一个视频）\杠板归tu1.png" />
+    <Resource Include="野草之智（待机页是一个视频）\杠板归tu2.png" />
+    <Resource Include="野草之智（待机页是一个视频）\杠板归zi.png" />
+    <Resource Include="野草之智（待机页是一个视频）\益母草ml.png" />
+    <Resource Include="野草之智（待机页是一个视频）\益母草tu1.png" />
+    <Resource Include="野草之智（待机页是一个视频）\益母草tu2.png" />
+    <Resource Include="野草之智（待机页是一个视频）\益母草zi.png" />
+    <Resource Include="野草之智（待机页是一个视频）\目录效果图.png" />
+    <Resource Include="野草之智（待机页是一个视频）\目录背景.png" />
+    <Resource Include="野草之智（待机页是一个视频）\看整体.png" />
+    <Resource Include="野草之智（待机页是一个视频）\看细节.png" />
+    <Resource Include="野草之智（待机页是一个视频）\背景.png" />
+    <Resource Include="野草之智（待机页是一个视频）\蒲公英ml.png" />
+    <Resource Include="野草之智（待机页是一个视频）\蒲公英tu1.png" />
+    <Resource Include="野草之智（待机页是一个视频）\蒲公英tu2.png" />
+    <Resource Include="野草之智（待机页是一个视频）\蒲公英zi.png" />
+    <Resource Include="野草之智（待机页是一个视频）\蓼蓝ml.png" />
+    <Resource Include="野草之智（待机页是一个视频）\蓼蓝tu1.png" />
+    <Resource Include="野草之智（待机页是一个视频）\蓼蓝tu2.png" />
+    <Resource Include="野草之智（待机页是一个视频）\蓼蓝zi.png" />
+    <Resource Include="野草之智（待机页是一个视频）\车前ml.png" />
+    <Resource Include="野草之智（待机页是一个视频）\车前tu1.png" />
+    <Resource Include="野草之智（待机页是一个视频）\车前tu2.png" />
+    <Resource Include="野草之智（待机页是一个视频）\车前zi.png" />
+    <Resource Include="野草之智（待机页是一个视频）\首页\云.png" />
+    <Resource Include="野草之智（待机页是一个视频）\首页\人物.png" />
+    <Resource Include="野草之智（待机页是一个视频）\首页\人物投影.png" />
+    <Resource Include="野草之智（待机页是一个视频）\首页\前景植物1.png" />
+    <Resource Include="野草之智（待机页是一个视频）\首页\前景植物2.png" />
+    <Resource Include="野草之智（待机页是一个视频）\首页\地面1.png" />
+    <Resource Include="野草之智（待机页是一个视频）\首页\地面2.png" />
+    <Resource Include="野草之智（待机页是一个视频）\首页\地面3.png" />
+    <Resource Include="野草之智（待机页是一个视频）\首页\地面4.png" />
+    <Resource Include="野草之智（待机页是一个视频）\首页\太阳.png" />
+    <Resource Include="野草之智（待机页是一个视频）\首页\植物1.png" />
+    <Resource Include="野草之智（待机页是一个视频）\首页\植物2.png" />
+    <Resource Include="野草之智（待机页是一个视频）\首页\植物3.png" />
+    <Resource Include="野草之智（待机页是一个视频）\首页\背景.png" />
+    <Resource Include="野草之智（待机页是一个视频）\首页\近景蒲公英.png" />
+    <Resource Include="野草之智（待机页是一个视频）\首页\远处鸟.png" />
+    <Resource Include="野草之智（待机页是一个视频）\首页\飞舞蒲公英1.png" />
+    <Resource Include="野草之智（待机页是一个视频）\首页\飞舞蒲公英2.png" />
+    <Resource Include="野草之智（待机页是一个视频）\首页\首页按钮.png" />
+    <Resource Include="野草之智（待机页是一个视频）\首页\首页标题.png" />
+    <Resource Include="野草之智（待机页是一个视频）\首页效果图.png" />
+    <Resource Include="野草之智（待机页是一个视频）\鸭跖草ml.png" />
+    <Resource Include="野草之智（待机页是一个视频）\鸭跖草tu1.png" />
+    <Resource Include="野草之智（待机页是一个视频）\鸭跖草tu2.png" />
+    <Resource Include="野草之智（待机页是一个视频）\鸭跖草zi.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

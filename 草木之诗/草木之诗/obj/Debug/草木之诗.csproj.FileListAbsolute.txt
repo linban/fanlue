@@ -1,0 +1,16 @@
+F:\公司UnityProject\梵略\草木之诗\草木之诗\bin\Debug\草木之诗.exe.config
+F:\公司UnityProject\梵略\草木之诗\草木之诗\bin\Debug\草木之诗.exe
+F:\公司UnityProject\梵略\草木之诗\草木之诗\bin\Debug\草木之诗.pdb
+F:\公司UnityProject\梵略\草木之诗\草木之诗\obj\Debug\草木之诗.csprojResolveAssemblyReference.cache
+F:\公司UnityProject\梵略\草木之诗\草木之诗\obj\Debug\MainWindow.g.cs
+F:\公司UnityProject\梵略\草木之诗\草木之诗\obj\Debug\App.g.cs
+F:\公司UnityProject\梵略\草木之诗\草木之诗\obj\Debug\草木之诗_Content.g.cs
+F:\公司UnityProject\梵略\草木之诗\草木之诗\obj\Debug\草木之诗_MarkupCompile.cache
+F:\公司UnityProject\梵略\草木之诗\草木之诗\obj\Debug\草木之诗_MarkupCompile.lref
+F:\公司UnityProject\梵略\草木之诗\草木之诗\obj\Debug\MainWindow.baml
+F:\公司UnityProject\梵略\草木之诗\草木之诗\obj\Debug\草木之诗.g.resources
+F:\公司UnityProject\梵略\草木之诗\草木之诗\obj\Debug\草木之诗.Properties.Resources.resources
+F:\公司UnityProject\梵略\草木之诗\草木之诗\obj\Debug\草木之诗.csproj.GenerateResource.cache
+F:\公司UnityProject\梵略\草木之诗\草木之诗\obj\Debug\草木之诗.csproj.CoreCompileInputs.cache
+F:\公司UnityProject\梵略\草木之诗\草木之诗\obj\Debug\草木之诗.exe
+F:\公司UnityProject\梵略\草木之诗\草木之诗\obj\Debug\草木之诗.pdb

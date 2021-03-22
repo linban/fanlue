@@ -1,0 +1,1015 @@
+﻿<Window x:Class="湖泊湿地.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:湖泊湿地"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1080" Width="1920" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Window.Resources>
+
+        <Storyboard x:Key="ReadContent">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="ReadContent">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="ReadQuestion">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="ReadDetail">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid35">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid36">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid37">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid38">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="grid35">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-50">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="grid36">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-50">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-50">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="grid37">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-50">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="-50">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="grid38">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-50">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuadraticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-50">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuadraticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuadraticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid35">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid36">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid37">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid38">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuadraticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuadraticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <QuadraticEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="ReadQuestion">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="ReadContent">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="ReadQuestion">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="ReadDetail">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Answer">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid43">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid44">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid45">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid46">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Submit">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Q0">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid39">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid40">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid41">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid42">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid39">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0.995"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Q1">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid39">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid40">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid41">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid42">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid40">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Q2">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid39">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid40">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid41">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid42">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid41">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Q3">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid39">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid40">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid41">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid42">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid42">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+
+        <Storyboard x:Key="C1">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid43">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid44">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid45">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid46">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Submit">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="C2">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid43">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid44">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid45">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid46">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Submit">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="C3">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid43">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid44">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid45">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid46">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Submit">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="C4">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid43">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid44">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid45">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid46">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Submit">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="AnwerTure">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Answer">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="_true">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="_false">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="ReadDetail">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="ReadContent">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="ReadQuestion">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="ReadDetail">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="ReadDetail0">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid16">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid19">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid22">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid25">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid17">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid18">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid17">
+                <EasingDoubleKeyFrame KeyTime="0" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid18">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-50"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="0.995"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="ReadDetail1">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid16">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid19">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid22">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid25">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid20">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid21">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid20">
+                <EasingDoubleKeyFrame KeyTime="0" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid21">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-50"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="ReadDetail2">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid16">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid19">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid22">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid25">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid23">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid24">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid23">
+                <EasingDoubleKeyFrame KeyTime="0" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid24">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-50"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid2">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="ReadDetail3">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid16">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid19">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid22">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid25">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid26">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid27">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid26">
+                <EasingDoubleKeyFrame KeyTime="0" Value="150"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="grid27">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-50"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid3">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.8" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="AnwerFalse">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="Answer">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="_true">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="_false">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+
+            <BeginStoryboard Storyboard="{StaticResource ReadContent}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.TouchDown" SourceName="grid35">
+            <BeginStoryboard x:Name="ReadQuestion_BeginStoryboard" Storyboard="{StaticResource ReadQuestion}"/>
+            <BeginStoryboard x:Name="Q0_BeginStoryboard" Storyboard="{StaticResource Q0}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.TouchDown" SourceName="grid36">
+            <BeginStoryboard x:Name="ReadQuestion_BeginStoryboard1" Storyboard="{StaticResource ReadQuestion}"/>
+            <BeginStoryboard x:Name="Q1_BeginStoryboard" Storyboard="{StaticResource Q1}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.TouchDown" SourceName="grid37">
+            <BeginStoryboard x:Name="ReadQuestion_BeginStoryboard2" Storyboard="{StaticResource ReadQuestion}"/>
+            <BeginStoryboard x:Name="Q2_BeginStoryboard" Storyboard="{StaticResource Q2}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.TouchDown" SourceName="grid38">
+            <BeginStoryboard x:Name="ReadQuestion_BeginStoryboard3" Storyboard="{StaticResource ReadQuestion}"/>
+            <BeginStoryboard x:Name="Q3_BeginStoryboard" Storyboard="{StaticResource Q3}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.TouchDown" SourceName="grid47">
+            <BeginStoryboard x:Name="C1_BeginStoryboard" Storyboard="{StaticResource C1}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.TouchDown" SourceName="grid48">
+            <BeginStoryboard x:Name="C2_BeginStoryboard" Storyboard="{StaticResource C2}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.TouchDown" SourceName="grid49">
+            <BeginStoryboard x:Name="C3_BeginStoryboard" Storyboard="{StaticResource C3}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.TouchDown" SourceName="grid50">
+            <BeginStoryboard x:Name="C4_BeginStoryboard" Storyboard="{StaticResource C4}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.TouchDown" SourceName="grid51">
+            <BeginStoryboard x:Name="ReadDetail_BeginStoryboard" Storyboard="{StaticResource ReadDetail}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="UIElement.TouchDown" SourceName="grid28">
+            <BeginStoryboard x:Name="ReadContent_BeginStoryboard2" Storyboard="{StaticResource ReadContent}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="209*"/>
+            <ColumnDefinition Width="431*"/>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="ReadContent" HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920" Grid.ColumnSpan="2">
+            <Grid.Background>
+                <ImageBrush ImageSource="闻香识草（无待机页）/背景.png"/>
+            </Grid.Background>
+            <Grid x:Name="BG1" HorizontalAlignment="Right" Height="842" VerticalAlignment="Bottom" Width="1526" Margin="0,0,147.753,105.537">
+                <Grid.Background>
+                    <ImageBrush ImageSource="闻香识草（无待机页）/形状1.png"/>
+                </Grid.Background>
+                <Grid HorizontalAlignment="Left" Height="151" Margin="-168.86,-63.322,0,0" VerticalAlignment="Top" Width="283">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/标题.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="853" Margin="-398.736,307.208,0,-318.208" VerticalAlignment="Top" Width="569">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/散件1/水蓼.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="752" Margin="-55.952,427.869,0,-337.869" VerticalAlignment="Top" Width="402" RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="52.269"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/散件1/无名精.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="915" Margin="1011.284,-437.844,-359.284,0" VerticalAlignment="Top" Width="874" RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-85.932"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/散件1/紫苏.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="615" Margin="1191.284,468.208,-421.284,-241.208" VerticalAlignment="Top" Width="756">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/散件1/活血丹.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="788" Margin="1414.203,336.208,-243.203,-282.208" VerticalAlignment="Top" Width="355" d:IsHidden="True">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/散件/韭白3.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="710.378" Margin="1414.203,336.208,-1065.991,-204.586" VerticalAlignment="Top" Width="1177.788" d:IsHidden="True">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/散件/艾草.png"/>
+                    </Grid.Background>
+                </Grid>
+            </Grid>
+            <Grid HorizontalAlignment="Center" Height="76" Margin="444,252,474,0" VerticalAlignment="Top" Width="1002" Background="{x:Null}">
+                <Grid HorizontalAlignment="Left" Height="42" Margin="77,124,0,-90" VerticalAlignment="Top" Width="691">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/四种植物中哪种闻起来有胡椒的味道？.png"/>
+                    </Grid.Background>
+                    <Grid x:Name="grid35" HorizontalAlignment="Left" Height="100" Margin="747,-27,-369,-31" VerticalAlignment="Top" Width="313" RenderTransformOrigin="0.5,0.5" TouchDown="Plant0">
+                        <Grid.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Grid.RenderTransform>
+                        <Grid.Background>
+                            <ImageBrush ImageSource="闻香识草（无待机页）/答题按钮.png"/>
+                        </Grid.Background>
+                    </Grid>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="42" Margin="77,215.5,0,-181.5" VerticalAlignment="Top" Width="607">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/四种植物中哪种闻起来非常冲呛？.png"/>
+                    </Grid.Background>
+                    <Grid x:Name="grid36" HorizontalAlignment="Left" Height="100" Margin="747.5,-25.5,-495.5,-32.5" VerticalAlignment="Top" Width="313" RenderTransformOrigin="0.5,0.5" TouchDown="Plant1">
+                        <Grid.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Grid.RenderTransform>
+                        <Grid.Background>
+                            <ImageBrush ImageSource="闻香识草（无待机页）/答题按钮.png"/>
+                        </Grid.Background>
+                    </Grid>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="42" Margin="77,305.5,0,-271.5" VerticalAlignment="Top" Width="607">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/四种植物中哪种闻起来比较清淡？.png"/>
+                    </Grid.Background>
+                    <Grid x:Name="grid37" HorizontalAlignment="Left" Height="100" Margin="748.5,-24,-454.5,-34" VerticalAlignment="Top" Width="313" RenderTransformOrigin="0.5,0.5" TouchDown="Plant2">
+                        <Grid.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Grid.RenderTransform>
+                        <Grid.Background>
+                            <ImageBrush ImageSource="闻香识草（无待机页）/答题按钮.png"/>
+                        </Grid.Background>
+                    </Grid>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="42" Margin="77,398.5,0,-364.5" VerticalAlignment="Top" Width="607">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/四种植物中哪种闻起来香味浓郁？.png"/>
+                    </Grid.Background>
+                    <Grid x:Name="grid38" HorizontalAlignment="Left" Height="100" Margin="749.5,-27,-455.5,-31" VerticalAlignment="Top" Width="313" RenderTransformOrigin="0.5,0.5" TouchDown="Plant3">
+                        <Grid.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Grid.RenderTransform>
+                        <Grid.Background>
+                            <ImageBrush ImageSource="闻香识草（无待机页）/答题按钮.png"/>
+                        </Grid.Background>
+                    </Grid>
+                </Grid>
+            </Grid>
+        </Grid>
+        <Grid x:Name="ReadQuestion" HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920" Grid.ColumnSpan="2">
+            <Grid.Background>
+                <ImageBrush ImageSource="闻香识草（无待机页）/背景.png"/>
+            </Grid.Background>
+            <Grid x:Name="BG1_Copy1" HorizontalAlignment="Right" Height="842" VerticalAlignment="Bottom" Width="1526" Margin="0,0,147.753,105.537">
+                <Grid.Background>
+                    <ImageBrush ImageSource="闻香识草（无待机页）/形状1.png"/>
+                </Grid.Background>
+                <Grid HorizontalAlignment="Left" Height="151" Margin="-168.86,-63.322,0,0" VerticalAlignment="Top" Width="283">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/标题.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="853" Margin="-398.736,307.208,0,-318.208" VerticalAlignment="Top" Width="569">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/散件1/水蓼.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="752" Margin="-55.952,427.869,0,-337.869" VerticalAlignment="Top" Width="402" RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="52.269"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/散件1/无名精.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="915" Margin="1011.284,-437.844,-359.284,0" VerticalAlignment="Top" Width="874" RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-85.932"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/散件1/紫苏.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="615" Margin="1191.284,468.208,-421.284,-241.208" VerticalAlignment="Top" Width="756">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/散件1/活血丹.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="788" Margin="1414.203,336.208,-243.203,-282.208" VerticalAlignment="Top" Width="355" d:IsHidden="True">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/散件/韭白3.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Height="710.378" Margin="1414.203,336.208,-1065.991,-204.586" VerticalAlignment="Top" Width="1177.788" d:IsHidden="True">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/散件/艾草.png"/>
+                    </Grid.Background>
+                </Grid>
+            </Grid>
+            <Grid x:Name="Pic" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920">
+                <Grid x:Name="grid39" HorizontalAlignment="Left" Height="42" Margin="648,413,0,625" VerticalAlignment="Center" Width="691">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/四种植物中哪种闻起来有胡椒的味道？.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid x:Name="grid40" HorizontalAlignment="Left" Height="42" Margin="648,413,0,625" VerticalAlignment="Center" Width="607">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/四种植物中哪种闻起来非常冲呛？.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid x:Name="grid41" HorizontalAlignment="Left" Height="42" Margin="648,413,0,625" VerticalAlignment="Center" Width="607">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/四种植物中哪种闻起来比较清淡？.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid x:Name="grid42" HorizontalAlignment="Left" Height="42" Margin="648,413,0,625" VerticalAlignment="Center" Width="607">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/四种植物中哪种闻起来香味浓郁？.png"/>
+                    </Grid.Background>
+                </Grid>
+            </Grid>
+            <Grid x:Name="Chio" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920" Background="{x:Null}">
+                <Grid x:Name="grid47" HorizontalAlignment="Left" Height="50" Margin="765,515,0,515" VerticalAlignment="Center" Width="143" TouchDown="MyPlant0">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/植物A.png"/>
+                    </Grid.Background>
+                    <Grid x:Name="grid43" HorizontalAlignment="Left" Height="50" Margin="-56,0,0,0" VerticalAlignment="Center" Width="199">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="闻香识草（无待机页）/A选.png"/>
+                        </Grid.Background>
+                    </Grid>
+                </Grid>
+                <Grid x:Name="grid48" HorizontalAlignment="Left" Height="50" Margin="1080,515,0,515" VerticalAlignment="Center" Width="143" TouchDown="MyPlant1">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/植物B.png"/>
+                    </Grid.Background>
+                    <Grid x:Name="grid44" HorizontalAlignment="Left" Height="50" Margin="-56,0,0,0" VerticalAlignment="Center" Width="199">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="闻香识草（无待机页）/B选.png"/>
+                        </Grid.Background>
+                    </Grid>
+                </Grid>
+                <Grid x:Name="grid49" HorizontalAlignment="Left" Height="50" Margin="765,605,0,425" VerticalAlignment="Center" Width="143" TouchDown="MyPlant2">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/植物C.png"/>
+                    </Grid.Background>
+                    <Grid x:Name="grid45" HorizontalAlignment="Left" Height="50" Margin="-56,0,0,0" VerticalAlignment="Center" Width="199">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="闻香识草（无待机页）/C选.png"/>
+                        </Grid.Background>
+                    </Grid>
+                </Grid>
+                <Grid x:Name="grid50" HorizontalAlignment="Left" Height="50" Margin="1080,605,0,425" VerticalAlignment="Center" Width="143" TouchDown="MyPlant3">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/植物D.png"/>
+                    </Grid.Background>
+                    <Grid x:Name="grid46" HorizontalAlignment="Left" Height="50" Margin="-56,0,0,0" VerticalAlignment="Center" Width="199">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="闻香识草（无待机页）/D选.png"/>
+                        </Grid.Background>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid x:Name="Submit" HorizontalAlignment="Left" Height="100" Margin="826,771,0,0" VerticalAlignment="Top" Width="313" TouchDown="SubmitOption">
+                <Grid.Background>
+                    <ImageBrush ImageSource="闻香识草（无待机页）/提交1.png"/>
+                </Grid.Background>
+            </Grid>
+            <Grid x:Name="Answer" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920" Background="{x:Null}">
+                <Grid x:Name="_true" HorizontalAlignment="Center" Height="1080" Margin="0" VerticalAlignment="Center" Width="1920">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/效果3.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid x:Name="_false" HorizontalAlignment="Center" Height="1080" Margin="0" VerticalAlignment="Center" Width="1920">
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/闻香3-1.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid x:Name="grid51" HorizontalAlignment="Left" Height="98.5" Margin="803.5,649.5,0,0" VerticalAlignment="Top" Width="317.5" TouchDown="NextBtn" Background="#00000000"/>
+            </Grid>
+        </Grid>
+        <Grid x:Name="ReadDetail" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920" Grid.ColumnSpan="2">
+            <Grid.Background>
+                <ImageBrush ImageSource="闻香识草（无待机页）/背景.png"/>
+            </Grid.Background>
+            <Grid HorizontalAlignment="Left" Height="151" Margin="74.14,56.678,0,0" VerticalAlignment="Top" Width="283">
+                <Grid.Background>
+                    <ImageBrush ImageSource="闻香识草（无待机页）/标题.png"/>
+                </Grid.Background>
+            </Grid>
+            <Grid x:Name="grid16" HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920">
+                <Grid x:Name="grid" HorizontalAlignment="Left" Height="578.876" Margin="834.41,96.562,0,0" VerticalAlignment="Top" Width="375.18" RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-23.268"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/散件1/水蓼.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid x:Name="grid17" HorizontalAlignment="Right" Height="926" Margin="0,72,96,0" VerticalAlignment="Top" Width="935" RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/水蓼zi.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid x:Name="grid18" HorizontalAlignment="Left" Height="582" Margin="131,244,0,254" VerticalAlignment="Center" Width="758" RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/水蓼tu.png"/>
+                    </Grid.Background>
+                </Grid>
+            </Grid>
+            <Grid x:Name="grid19" HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920">
+                <Grid x:Name="grid1" HorizontalAlignment="Left" Height="618.706" Margin="902.265,138.147,0,0" VerticalAlignment="Top" Width="313.47" RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-25.998"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/散件1/无名精.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid x:Name="grid20" HorizontalAlignment="Right" Height="926" Margin="0,72,96,0" VerticalAlignment="Top" Width="935" RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/天名精zi.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid x:Name="grid21" HorizontalAlignment="Left" Height="582" Margin="131,240,0,258" VerticalAlignment="Center" Width="758" RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/天名精tu.png"/>
+                    </Grid.Background>
+                </Grid>
+            </Grid>
+            <Grid x:Name="grid22" HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920">
+                <Grid x:Name="grid2" HorizontalAlignment="Left" Height="808.962" Margin="688.151,-30.981,0,0" VerticalAlignment="Top" Width="709.698" RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-41.577"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/散件1/紫苏.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid x:Name="grid23" HorizontalAlignment="Right" Height="926" Margin="0,72,96,0" VerticalAlignment="Top" Width="935" RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/紫苏zi.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid x:Name="grid24" HorizontalAlignment="Left" Height="582" Margin="131,249,0,249" VerticalAlignment="Center" Width="758" RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/紫苏tu.png"/>
+                    </Grid.Background>
+                </Grid>
+            </Grid>
+            <Grid x:Name="grid25" HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920">
+                <Grid x:Name="grid3" HorizontalAlignment="Left" Height="462.928" Margin="836.942,48.536,0,0" VerticalAlignment="Top" Width="543.116" RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-27.352"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/散件1/活血丹.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid x:Name="grid26" HorizontalAlignment="Right" Height="926" Margin="0,72,96,0" VerticalAlignment="Top" Width="935" RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/活血丹zi.png"/>
+                    </Grid.Background>
+                </Grid>
+                <Grid x:Name="grid27" HorizontalAlignment="Left" Height="582" Margin="131,244,0,0" VerticalAlignment="Top" Width="758" RenderTransformOrigin="0.5,0.5">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Grid.Background>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/活血丹tu.png"/>
+                    </Grid.Background>
+                </Grid>
+            </Grid>
+            <Grid x:Name="grid28" HorizontalAlignment="Left" Height="100" Margin="773.5,858.5,0,0" VerticalAlignment="Top" Width="313">
+                <Grid.Background>
+                    <ImageBrush ImageSource="闻香识草（无待机页）/我知道了.png"/>
+                </Grid.Background>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

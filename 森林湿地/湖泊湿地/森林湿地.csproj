@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{54D2EED2-B8B1-4DD8-8FA4-6977AFE66D1C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>湖泊湿地</RootNamespace>
+    <AssemblyName>湖泊湿地</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cover.avi" />
+    <Resource Include="森林湿地\看叶识树内容\Next.png" />
+    <Resource Include="森林湿地\场景解读内容\back.png" />
+    <Resource Include="森林湿地\场景解读内容\乌鸫tu.png" />
+    <Resource Include="森林湿地\场景解读内容\乌鸫zi.png" />
+    <Resource Include="森林湿地\场景解读内容\夜鹭tu.png" />
+    <Resource Include="森林湿地\场景解读内容\夜鹭zi.png" />
+    <Resource Include="森林湿地\场景解读内容\大山雀tu.png" />
+    <Resource Include="森林湿地\场景解读内容\大山雀zi.png" />
+    <Resource Include="森林湿地\场景解读内容\背景.png" />
+    <Resource Include="森林湿地\场景解读内容\雉鸡tu.png" />
+    <Resource Include="森林湿地\场景解读内容\雉鸡zi.png" />
+    <Resource Include="森林湿地\场景解读目录\back.png" />
+    <Resource Include="森林湿地\场景解读目录\乌鸫ml .png" />
+    <Resource Include="森林湿地\场景解读目录\乌鸫x .png" />
+    <Resource Include="森林湿地\场景解读目录\夜鹭ml .png" />
+    <Resource Include="森林湿地\场景解读目录\夜鹭x .png" />
+    <Resource Include="森林湿地\场景解读目录\大山雀ml .png" />
+    <Resource Include="森林湿地\场景解读目录\大山雀x .png" />
+    <Resource Include="森林湿地\场景解读目录\效果图.png" />
+    <Resource Include="森林湿地\场景解读目录\背景.png" />
+    <Resource Include="森林湿地\场景解读目录\雉鸡ml .png" />
+    <Resource Include="森林湿地\场景解读目录\雉鸡x .png" />
+    <Resource Include="森林湿地\看叶识树内容\A . 水杉.png" />
+    <Resource Include="森林湿地\看叶识树内容\A . 水杉1.png" />
+    <Resource Include="森林湿地\看叶识树内容\B . 香樟.png" />
+    <Resource Include="森林湿地\看叶识树内容\B . 香樟1.png" />
+    <Resource Include="森林湿地\看叶识树内容\back 拷贝.png" />
+    <Resource Include="森林湿地\看叶识树内容\C . 乌桕.png" />
+    <Resource Include="森林湿地\看叶识树内容\C . 乌桕1.png" />
+    <Resource Include="森林湿地\看叶识树内容\c.png" />
+    <Resource Include="森林湿地\看叶识树内容\D . 银杏.png" />
+    <Resource Include="森林湿地\看叶识树内容\D . 银杏1.png" />
+    <Resource Include="森林湿地\看叶识树内容\r.png" />
+    <Resource Include="森林湿地\看叶识树内容\乌桕tu.png" />
+    <Resource Include="森林湿地\看叶识树内容\介绍\back 拷贝.png" />
+    <Resource Include="森林湿地\看叶识树内容\介绍\乌桕tu.png" />
+    <Resource Include="森林湿地\看叶识树内容\介绍\乌桕zi.png" />
+    <Resource Include="森林湿地\看叶识树内容\介绍\效果图.png" />
+    <Resource Include="森林湿地\看叶识树内容\介绍\水杉tu.png" />
+    <Resource Include="森林湿地\看叶识树内容\介绍\水杉zi.png" />
+    <Resource Include="森林湿地\看叶识树内容\介绍\背景.png" />
+    <Resource Include="森林湿地\看叶识树内容\介绍\装饰2.png" />
+    <Resource Include="森林湿地\看叶识树内容\介绍\银杏tu.png" />
+    <Resource Include="森林湿地\看叶识树内容\介绍\银杏zi.png" />
+    <Resource Include="森林湿地\看叶识树内容\介绍\香樟tu.png" />
+    <Resource Include="森林湿地\看叶识树内容\介绍\香樟zi.png" />
+    <Resource Include="森林湿地\看叶识树内容\提交按钮.png" />
+    <Resource Include="森林湿地\看叶识树内容\效果图1.png" />
+    <Resource Include="森林湿地\看叶识树内容\效果图2.png" />
+    <Resource Include="森林湿地\看叶识树内容\效果图3.png" />
+    <Resource Include="森林湿地\看叶识树内容\水杉tu.png" />
+    <Resource Include="森林湿地\看叶识树内容\背景.png" />
+    <Resource Include="森林湿地\看叶识树内容\装饰1.png" />
+    <Resource Include="森林湿地\看叶识树内容\这是哪种树的树叶呢？.png" />
+    <Resource Include="森林湿地\看叶识树内容\遮罩.png" />
+    <Resource Include="森林湿地\看叶识树内容\银杏tu.png" />
+    <Resource Include="森林湿地\看叶识树内容\香樟tu.png" />
+    <Resource Include="森林湿地\看叶识树目录\back 拷贝.png" />
+    <Resource Include="森林湿地\看叶识树目录\乌桕.png" />
+    <Resource Include="森林湿地\看叶识树目录\效果图.png" />
+    <Resource Include="森林湿地\看叶识树目录\文字提醒.png" />
+    <Resource Include="森林湿地\看叶识树目录\水杉.png" />
+    <Resource Include="森林湿地\看叶识树目录\背景.png" />
+    <Resource Include="森林湿地\看叶识树目录\装饰.png" />
+    <Resource Include="森林湿地\看叶识树目录\银杏.png" />
+    <Resource Include="森林湿地\看叶识树目录\香樟.png" />
+    <Resource Include="森林湿地\首页\效果图.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A65DFBA9-FEA6-4E0B-A55D-49EA4C750C34}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>独特的食物链</RootNamespace>
+    <AssemblyName>独特的食物链</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="独特的食物链\目录\1.png" />
+    <Resource Include="独特的食物链\目录\2.png" />
+    <Resource Include="独特的食物链\目录\3.png" />
+    <Resource Include="独特的食物链\目录\4.png" />
+    <Resource Include="独特的食物链\目录\5.png" />
+    <Resource Include="独特的食物链\目录\6.png" />
+    <Resource Include="独特的食物链\目录\left.png" />
+    <Resource Include="独特的食物链\目录\right.png" />
+    <Resource Include="独特的食物链\目录\位置参考.png" />
+    <Resource Include="独特的食物链\目录\效果图1.png" />
+    <Resource Include="独特的食物链\目录\效果图2.png" />
+    <Resource Include="独特的食物链\目录\水杉ml.png" />
+    <Resource Include="独特的食物链\目录\水杉x.png" />
+    <Resource Include="独特的食物链\目录\灰脸鵟鹰ml.png" />
+    <Resource Include="独特的食物链\目录\灰脸鵟鹰x.png" />
+    <Resource Include="独特的食物链\目录\王锦蛇ml.png" />
+    <Resource Include="独特的食物链\目录\王锦蛇x.png" />
+    <Resource Include="独特的食物链\目录\白鹭ml.png" />
+    <Resource Include="独特的食物链\目录\白鹭x.png" />
+    <Resource Include="独特的食物链\目录\背景.png" />
+    <Resource Include="独特的食物链\目录\背景1.png" />
+    <Resource Include="独特的食物链\目录\褐家鼠ml.png" />
+    <Resource Include="独特的食物链\目录\褐家鼠x.png" />
+    <Resource Include="独特的食物链\目录\返回按钮.png" />
+    <Resource Include="独特的食物链\目录\黄钩蛱蝶ml.png" />
+    <Resource Include="独特的食物链\目录\黄钩蛱蝶x.png" />
+    <Resource Include="独特的食物链\目录\黄鼬ml.png" />
+    <Resource Include="独特的食物链\目录\黄鼬x.png" />
+    <Resource Include="独特的食物链\详情\效果图.png" />
+    <Resource Include="独特的食物链\详情\水杉tu.png" />
+    <Resource Include="独特的食物链\详情\水杉zi.png" />
+    <Resource Include="独特的食物链\详情\灰脸鵟鹰tu.png" />
+    <Resource Include="独特的食物链\详情\灰脸鵟鹰zi.png" />
+    <Resource Include="独特的食物链\详情\王锦蛇tu.png" />
+    <Resource Include="独特的食物链\详情\王锦蛇zi.png" />
+    <Resource Include="独特的食物链\详情\白鹭tu.png" />
+    <Resource Include="独特的食物链\详情\白鹭zi.png" />
+    <Resource Include="独特的食物链\详情\背景.png" />
+    <Resource Include="独特的食物链\详情\装饰1.png" />
+    <Resource Include="独特的食物链\详情\装饰2.png" />
+    <Resource Include="独特的食物链\详情\褐家鼠tu.png" />
+    <Resource Include="独特的食物链\详情\褐家鼠zi.png" />
+    <Resource Include="独特的食物链\详情\返回按钮.png" />
+    <Resource Include="独特的食物链\详情\黄钩蛱蝶tu.png" />
+    <Resource Include="独特的食物链\详情\黄钩蛱蝶zi.png" />
+    <Resource Include="独特的食物链\详情\黄鼬tu.png" />
+    <Resource Include="独特的食物链\详情\黄鼬zi.png" />
+    <Resource Include="独特的食物链\首页\效果图.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
