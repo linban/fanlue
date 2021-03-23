@@ -95,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Cover.avi" />
+    <Resource Include="闻香识草（无待机页）\微信图片_20210324001212.png" />
     <Resource Include="闻香识草（无待机页）\天名精tu.png" />
     <Resource Include="闻香识草（无待机页）\天名精zi.png" />
     <Resource Include="闻香识草（无待机页）\水蓼tu.png" />
