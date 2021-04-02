@@ -95,6 +95,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Cover.avi" />
+    <Resource Include="森林湿地\森林.png" />
+    <Resource Include="森林湿地\森林按钮1.png" />
+    <Resource Include="森林湿地\森林按钮2.png" />
     <Resource Include="森林湿地\看叶识树内容\Next.png" />
     <Resource Include="森林湿地\场景解读内容\back.png" />
     <Resource Include="森林湿地\场景解读内容\乌鸫tu.png" />

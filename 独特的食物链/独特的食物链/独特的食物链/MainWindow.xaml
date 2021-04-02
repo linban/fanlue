@@ -961,10 +961,13 @@
     </Window.Triggers>
     <Grid>
         <Grid x:Name="Cover" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920">
-            <Grid.Background>
-                <ImageBrush ImageSource="独特的食物链/首页/效果图.png"/>
-            </Grid.Background>
-            <Grid x:Name="grid43" HorizontalAlignment="Left" Height="94" Margin="454,732,0,0" VerticalAlignment="Top" Width="306" Background="#00000000"/>
+            <MediaElement x:Name="ME" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920" Source="Cover.avi" MediaEnded="Repeat" LoadedBehavior="Manual"/>
+
+            <Grid x:Name="grid43" HorizontalAlignment="Left" Height="100" Margin="452.18,732.457,0,0" VerticalAlignment="Top" Width="313">
+                <Grid.Background>
+                    <ImageBrush ImageSource="独特的食物链/特别食物链按钮.png"/>
+                </Grid.Background>
+            </Grid>
         </Grid>
         <Grid x:Name="Content" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920">
             <Grid.Background>

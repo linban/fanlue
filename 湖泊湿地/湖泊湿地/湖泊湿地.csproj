@@ -138,6 +138,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Cover.avi" />
+    <Resource Include="湖泊湿地\湖泊按钮1.png" />
+    <Resource Include="湖泊湿地\湖泊按钮2.png" />
+    <Resource Include="湖泊湿地\湖泊.png" />
+    <Resource Include="湖泊湿地\森林沼泽湿地f.png" />
+    <Resource Include="湖泊湿地\河流湿地f.png" />
+    <Resource Include="湖泊湿地\湖泊湿地f.png" />
+    <Resource Include="湖泊湿地\草本沼泽湿地f.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

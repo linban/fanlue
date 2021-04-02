@@ -689,7 +689,7 @@
                 </Grid>
             </Grid>
         </Grid>
-        <Grid x:Name="ReadQuestion" HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920" Grid.ColumnSpan="2">
+        <Grid x:Name="ReadQuestion" HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920" Grid.ColumnSpan="2" d:IsHidden="True">
             <Grid.Background>
                 <ImageBrush ImageSource="闻香识草（无待机页）/背景.png"/>
             </Grid.Background>

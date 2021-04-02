@@ -742,8 +742,16 @@
         </Grid.ColumnDefinitions>
         <Grid x:Name="Cover" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920" Grid.ColumnSpan="2">
             <MediaElement x:Name="ME" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920" Source="Cover.avi" MediaEnded="MediaEndEvent" LoadedBehavior="Manual"/>
-            <Grid x:Name="Scene" HorizontalAlignment="Left" Height="96" Margin="414,516,0,0" VerticalAlignment="Top" Width="315" Background="#00000000"/>
-            <Grid x:Name="Place" HorizontalAlignment="Left" Height="96" Margin="771,516,0,0" VerticalAlignment="Top" Width="315" Background="#00000000"/>
+            <Grid x:Name="Scene" HorizontalAlignment="Left" Height="96" Margin="414,599.689,0,0" VerticalAlignment="Top" Width="315">
+                <Grid.Background>
+                    <ImageBrush ImageSource="森林湿地/森林按钮1.png"/>
+                </Grid.Background>
+            </Grid>
+            <Grid x:Name="Place" HorizontalAlignment="Left" Height="96" Margin="774,599.689,0,0" VerticalAlignment="Top" Width="315">
+                <Grid.Background>
+                    <ImageBrush ImageSource="森林湿地/森林按钮2.png"/>
+                </Grid.Background>
+            </Grid>
         </Grid>
         <Grid x:Name="SceneContent" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920" Grid.ColumnSpan="2">
             <Grid.Background>

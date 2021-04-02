@@ -306,6 +306,18 @@
                 <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
                 <DiscreteObjectKeyFrame KeyTime="0:0:0.5" Value="{x:Static Visibility.Visible}"/>
             </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid36">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid37">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid38">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid39">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="Place1">
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid24">
@@ -343,6 +355,22 @@
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid23">
                 <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
             </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid36">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid37">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid38">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid39">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid36">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="Place2">
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid24">
@@ -380,6 +408,22 @@
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid23">
                 <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
             </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid36">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid37">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid38">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid39">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid37">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="Place3">
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid24">
@@ -417,6 +461,22 @@
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid23">
                 <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
             </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid36">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid37">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid38">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid39">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid38">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="Place4">
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid24">
@@ -454,6 +514,22 @@
             <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid23">
                 <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
             </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid36">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid37">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid38">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="grid39">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="grid39">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </Window.Resources>
     <Window.Triggers>
@@ -508,8 +584,16 @@
     <Grid>
         <Grid x:Name="Cover" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920">
             <MediaElement x:Name="ME" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920" Source="Cover.avi" MediaEnded="MediaEndEvent" LoadedBehavior="Manual"/>
-            <Grid x:Name="Scene" HorizontalAlignment="Left" Height="96" Margin="414,516,0,0" VerticalAlignment="Top" Width="315" Background="#00000000"/>
-            <Grid x:Name="Place" HorizontalAlignment="Left" Height="96" Margin="771,516,0,0" VerticalAlignment="Top" Width="315" Background="#00000000"/>
+            <Grid x:Name="Scene" HorizontalAlignment="Left" Height="96" Margin="420,525,0,0" VerticalAlignment="Top" Width="315">
+                <Grid.Background>
+                    <ImageBrush ImageSource="湖泊湿地/湖泊按钮1.png"/>
+                </Grid.Background>
+            </Grid>
+            <Grid x:Name="Place" HorizontalAlignment="Left" Height="96" Margin="777,525,0,0" VerticalAlignment="Top" Width="315">
+                <Grid.Background>
+                    <ImageBrush ImageSource="湖泊湿地/湖泊按钮2.png"/>
+                </Grid.Background>
+            </Grid>
         </Grid>
         <Grid x:Name="SceneContent" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920">
             <Grid.Background>
@@ -799,6 +883,11 @@
                     <Grid.Background>
                         <ImageBrush ImageSource="湖泊湿地/湿地组成内容/湖泊湿地.png"/>
                     </Grid.Background>
+                    <Grid x:Name="grid36" HorizontalAlignment="Left" Height="269" Margin="-545,222,0,-413" VerticalAlignment="Top" Width="183">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="湖泊湿地/湖泊湿地f.png"/>
+                        </Grid.Background>
+                    </Grid>
                     <Grid x:Name="grid20" HorizontalAlignment="Left" Height="134" Margin="-26,-28,-28,-28" VerticalAlignment="Top" Width="410">
                         <Grid.Background>
                             <ImageBrush ImageSource="湖泊湿地/湿地组成内容/湖泊湿地1.png"/>
@@ -817,6 +906,11 @@
                     <Grid.Background>
                         <ImageBrush ImageSource="湖泊湿地/湿地组成内容/森林沼泽湿地.png"/>
                     </Grid.Background>
+                    <Grid x:Name="grid37" HorizontalAlignment="Left" Height="330" Margin="-336,-384,0,0" VerticalAlignment="Top" Width="223">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="湖泊湿地/森林沼泽湿地f.png"/>
+                        </Grid.Background>
+                    </Grid>
                     <Grid x:Name="grid21" HorizontalAlignment="Left" Height="134" Margin="-26,-28,-28,-28" VerticalAlignment="Top" Width="410">
                         <Grid.Background>
                             <ImageBrush ImageSource="湖泊湿地/湿地组成内容/森林沼泽湿地1.png"/>
@@ -835,6 +929,11 @@
                     <Grid.Background>
                         <ImageBrush ImageSource="湖泊湿地/湿地组成内容/草本沼泽湿地.png"/>
                     </Grid.Background>
+                    <Grid x:Name="grid38" HorizontalAlignment="Left" Height="379" Margin="-724,83,0,-384" VerticalAlignment="Top" Width="590">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="湖泊湿地/草本沼泽湿地f.png"/>
+                        </Grid.Background>
+                    </Grid>
                     <Grid x:Name="grid22" HorizontalAlignment="Left" Height="134" Margin="-26,-28,-28,-28" VerticalAlignment="Top" Width="410">
                         <Grid.Background>
                             <ImageBrush ImageSource="湖泊湿地/湿地组成内容/草本沼泽湿地1.png"/>
@@ -853,6 +952,11 @@
                     <Grid.Background>
                         <ImageBrush ImageSource="湖泊湿地/湿地组成内容/河流湿地.png"/>
                     </Grid.Background>
+                    <Grid x:Name="grid39" HorizontalAlignment="Left" Height="973" Margin="-771,-636,0,-259" VerticalAlignment="Top" Width="672">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="湖泊湿地/河流湿地f.png"/>
+                        </Grid.Background>
+                    </Grid>
                     <Grid x:Name="grid23" HorizontalAlignment="Left" Height="134" Margin="-26,-28,-28,-28" VerticalAlignment="Top" Width="410">
                         <Grid.Background>
                             <ImageBrush ImageSource="湖泊湿地/湿地组成内容/河流湿地1.png"/>

@@ -23,6 +23,13 @@ namespace 独特的食物链
         public MainWindow()
         {
             InitializeComponent();
+            ME.Play();
+        }
+
+        private void Repeat(object sender, RoutedEventArgs e)
+        {
+            ME.Stop();
+            ME.Play();
         }
     }
 }

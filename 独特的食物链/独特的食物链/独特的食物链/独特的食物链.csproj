@@ -143,5 +143,10 @@
     <Resource Include="独特的食物链\详情\黄鼬zi.png" />
     <Resource Include="独特的食物链\首页\效果图.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cover.avi" />
+    <Resource Include="独特的食物链\特别食物链按钮.png" />
+    <Resource Include="独特的食物链\特别食物链.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
