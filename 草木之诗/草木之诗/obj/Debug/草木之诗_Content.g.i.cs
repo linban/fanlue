@@ -9,5 +9,8 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("cover.avi")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("%e6%8c%89%e9%92%ae/%e7%82%b9%e5%87%bb%e8%bf%9b%e5%85%a5%e9%9f%b3%e6%95%88.mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("%e6%8c%89%e9%92%ae/%e8%bf%94%e5%9b%9e%e9%9f%b3%e6%95%88.mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("%e8%8d%89%e6%9c%a8%e4%b9%8b%e8%af%97.mp3")]
 
 

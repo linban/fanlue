@@ -1334,7 +1334,7 @@
                 </Grid>
             </Grid>-->
             <MediaElement x:Name="mediaElement" HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920" Source="Cover.avi" Position="0" MediaEnded="mediaended" LoadedBehavior="Manual"/>
-            <Grid x:Name="grid17" HorizontalAlignment="Left" Height="100" Margin="803.46,762.353,0,0" VerticalAlignment="Top" Width="313">
+            <Grid x:Name="grid17" HorizontalAlignment="Left" Height="100" Margin="803.46,762.353,0,0" VerticalAlignment="Top" Width="313" TouchDown="IntoTouchDown">
                 <Grid.Background>
                     <ImageBrush ImageSource="野草之智（待机页是一个视频）/首页/首页按钮.png"/>
                 </Grid.Background>
@@ -1345,7 +1345,7 @@
                 <Grid.Background>
                     <ImageBrush ImageSource="野草之智（待机页是一个视频）/目录背景.png"/>
                 </Grid.Background>
-                <Grid x:Name="grid" HorizontalAlignment="Left" Height="417" Margin="306.593,173.558,0,0" VerticalAlignment="Top" Width="403" RenderTransformOrigin="0.5,0.5">
+                <Grid x:Name="grid" HorizontalAlignment="Left" Height="417" Margin="306.593,173.558,0,0" VerticalAlignment="Top" Width="403" RenderTransformOrigin="0.5,0.5" TouchDown="IntoTouchDown">
                     <Grid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -1358,7 +1358,7 @@
                         <ImageBrush ImageSource="野草之智（待机页是一个视频）/杠板归ml.png"/>
                     </Grid.Background>
                 </Grid>
-                <Grid x:Name="grid1" HorizontalAlignment="Left" Height="400" Margin="774.702,179.574,0,0" VerticalAlignment="Top" Width="362" RenderTransformOrigin="0.5,0.5">
+                <Grid x:Name="grid1" HorizontalAlignment="Left" Height="400" Margin="774.702,179.574,0,0" VerticalAlignment="Top" Width="362" RenderTransformOrigin="0.5,0.5" TouchDown="IntoTouchDown">
                     <Grid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -1371,7 +1371,7 @@
                         <ImageBrush ImageSource="野草之智（待机页是一个视频）/蒲公英ml.png"/>
                     </Grid.Background>
                 </Grid>
-                <Grid x:Name="grid2" HorizontalAlignment="Left" Height="398" Margin="1222.373,179.574,0,0" VerticalAlignment="Top" Width="356" RenderTransformOrigin="0.5,0.5">
+                <Grid x:Name="grid2" HorizontalAlignment="Left" Height="398" Margin="1222.373,179.574,0,0" VerticalAlignment="Top" Width="356" RenderTransformOrigin="0.5,0.5" TouchDown="IntoTouchDown">
                     <Grid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -1384,7 +1384,7 @@
                         <ImageBrush ImageSource="野草之智（待机页是一个视频）/车前ml.png"/>
                     </Grid.Background>
                 </Grid>
-                <Grid x:Name="grid3" HorizontalAlignment="Left" Height="397" Margin="352.593,625.925,0,0" VerticalAlignment="Top" Width="357" RenderTransformOrigin="0.5,0.5">
+                <Grid x:Name="grid3" HorizontalAlignment="Left" Height="397" Margin="352.593,625.925,0,0" VerticalAlignment="Top" Width="357" RenderTransformOrigin="0.5,0.5" TouchDown="IntoTouchDown">
                     <Grid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -1397,7 +1397,7 @@
                         <ImageBrush ImageSource="野草之智（待机页是一个视频）/益母草ml.png"/>
                     </Grid.Background>
                 </Grid>
-                <Grid x:Name="grid3_Copy" HorizontalAlignment="Left" Height="388" Margin="791.702,625.925,0,0" VerticalAlignment="Top" Width="345" RenderTransformOrigin="0.5,0.5">
+                <Grid x:Name="grid3_Copy" HorizontalAlignment="Left" Height="388" Margin="791.702,625.925,0,0" VerticalAlignment="Top" Width="345" RenderTransformOrigin="0.5,0.5" TouchDown="IntoTouchDown">
                     <Grid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -1410,7 +1410,7 @@
                         <ImageBrush ImageSource="野草之智（待机页是一个视频）/鸭跖草ml.png"/>
                     </Grid.Background>
                 </Grid>
-                <Grid x:Name="grid3_Copy1" HorizontalAlignment="Left" Height="393" Margin="1227.373,620.925,0,0" VerticalAlignment="Top" Width="351" RenderTransformOrigin="0.5,0.5">
+                <Grid x:Name="grid3_Copy1" HorizontalAlignment="Left" Height="393" Margin="1227.373,620.925,0,0" VerticalAlignment="Top" Width="351" RenderTransformOrigin="0.5,0.5" TouchDown="IntoTouchDown">
                     <Grid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -1437,7 +1437,7 @@
                     <ImageBrush ImageSource="野草之智（待机页是一个视频）/智小标题.png"/>
                 </Grid.Background>
             </Grid>
-            <Grid x:Name="grid9" HorizontalAlignment="Left" Height="32" Margin="1728,106.5,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="0.5,0.5">
+            <Grid x:Name="grid9" HorizontalAlignment="Left" Height="32" Margin="1728,106.5,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="0.5,0.5" TouchDown="backTouchDown">
                 <Grid.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -1455,7 +1455,7 @@
             <Grid.Background>
                 <ImageBrush ImageSource="野草之智（待机页是一个视频）/背景.png"/>
             </Grid.Background>
-            <Grid x:Name="grid4" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920" d:IsHidden="True">
+            <Grid x:Name="grid4" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920">
                 <Grid x:Name="grid12" HorizontalAlignment="Left" Height="634" Margin="309,123,0,0" VerticalAlignment="Top" Width="730" RenderTransformOrigin="0.779,1.011">
                     <Grid.RenderTransform>
                         <TransformGroup>
@@ -1495,7 +1495,7 @@
                         <ImageBrush ImageSource="野草之智（待机页是一个视频）/杠板归zi.png"/>
                     </Grid.Background>
                 </Grid>
-                <Grid x:Name="grid15" HorizontalAlignment="Left" Height="100" Margin="351,891,0,0" VerticalAlignment="Top" Width="312" RenderTransformOrigin="0.5,0.5">
+                <Grid x:Name="grid15" HorizontalAlignment="Left" Height="100" Margin="351,891,0,0" VerticalAlignment="Top" Width="312" RenderTransformOrigin="0.5,0.5" TouchDown="IntoTouchDown">
                     <Grid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -1522,7 +1522,7 @@
                     </Grid.Background>
                 </Grid>
             </Grid>
-            <Grid x:Name="grid5" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920" d:IsHidden="True">
+            <Grid x:Name="grid5" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920">
                 <Grid x:Name="grid21" HorizontalAlignment="Left" Height="634" Margin="309,123,0,0" VerticalAlignment="Top" Width="730" RenderTransformOrigin="0.788,1.002">
                     <Grid.RenderTransform>
                         <TransformGroup>
@@ -1562,7 +1562,7 @@
                         <ImageBrush ImageSource="野草之智（待机页是一个视频）/蒲公英zi.png"/>
                     </Grid.Background>
                 </Grid>
-                <Grid x:Name="grid19" HorizontalAlignment="Left" Height="100" Margin="351,891,0,0" VerticalAlignment="Top" Width="312" RenderTransformOrigin="0.5,0.5">
+                <Grid x:Name="grid19" HorizontalAlignment="Left" Height="100" Margin="351,891,0,0" VerticalAlignment="Top" Width="312" RenderTransformOrigin="0.5,0.5" TouchDown="IntoTouchDown">
                     <Grid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -1581,7 +1581,7 @@
                     </Grid.Background>
                 </Grid>
             </Grid>
-            <Grid x:Name="grid6" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920" d:IsHidden="True">
+            <Grid x:Name="grid6" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920">
                 <Grid x:Name="grid26" HorizontalAlignment="Left" Height="634" Margin="309,123,0,0" VerticalAlignment="Top" Width="730" RenderTransformOrigin="0.785,1.008">
                     <Grid.RenderTransform>
                         <TransformGroup>
@@ -1621,7 +1621,7 @@
                         <ImageBrush ImageSource="野草之智（待机页是一个视频）/车前zi.png"/>
                     </Grid.Background>
                 </Grid>
-                <Grid x:Name="grid24" HorizontalAlignment="Left" Height="100" Margin="351,891,0,0" VerticalAlignment="Top" Width="312" RenderTransformOrigin="0.5,0.5">
+                <Grid x:Name="grid24" HorizontalAlignment="Left" Height="100" Margin="351,891,0,0" VerticalAlignment="Top" Width="312" RenderTransformOrigin="0.5,0.5" TouchDown="IntoTouchDown">
                     <Grid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -1640,7 +1640,7 @@
                     </Grid.Background>
                 </Grid>
             </Grid>
-            <Grid x:Name="grid7" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920" d:IsHidden="True">
+            <Grid x:Name="grid7" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920">
                 <Grid x:Name="grid31" HorizontalAlignment="Left" Height="634" Margin="309,123,0,0" VerticalAlignment="Top" Width="730" RenderTransformOrigin="0.785,0.989">
                     <Grid.RenderTransform>
                         <TransformGroup>
@@ -1680,7 +1680,7 @@
                         <ImageBrush ImageSource="野草之智（待机页是一个视频）/益母草zi.png"/>
                     </Grid.Background>
                 </Grid>
-                <Grid x:Name="grid29" HorizontalAlignment="Left" Height="100" Margin="351,891,0,0" VerticalAlignment="Top" Width="312" RenderTransformOrigin="0.5,0.5">
+                <Grid x:Name="grid29" HorizontalAlignment="Left" Height="100" Margin="351,891,0,0" VerticalAlignment="Top" Width="312" RenderTransformOrigin="0.5,0.5" TouchDown="IntoTouchDown">
                     <Grid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -1699,7 +1699,7 @@
                     </Grid.Background>
                 </Grid>
             </Grid>
-            <Grid x:Name="grid7_Copy" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920" d:IsHidden="True">
+            <Grid x:Name="grid7_Copy" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920">
                 <Grid x:Name="grid33" HorizontalAlignment="Left" Height="634" Margin="309,123,0,0" VerticalAlignment="Top" Width="730" RenderTransformOrigin="0.785,0.989">
                     <Grid.RenderTransform>
                         <TransformGroup>
@@ -1739,7 +1739,7 @@
                         <ImageBrush ImageSource="野草之智（待机页是一个视频）/鸭跖草zi.png"/>
                     </Grid.Background>
                 </Grid>
-                <Grid x:Name="grid36" HorizontalAlignment="Left" Height="100" Margin="351,891,0,0" VerticalAlignment="Top" Width="312" RenderTransformOrigin="0.5,0.5">
+                <Grid x:Name="grid36" HorizontalAlignment="Left" Height="100" Margin="351,891,0,0" VerticalAlignment="Top" Width="312" RenderTransformOrigin="0.5,0.5" TouchDown="IntoTouchDown">
                     <Grid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -1798,7 +1798,7 @@
                         <ImageBrush ImageSource="野草之智（待机页是一个视频）/蓼蓝zi.png"/>
                     </Grid.Background>
                 </Grid>
-                <Grid x:Name="grid41" HorizontalAlignment="Left" Height="100" Margin="351,891,0,0" VerticalAlignment="Top" Width="312" RenderTransformOrigin="0.5,0.5">
+                <Grid x:Name="grid41" HorizontalAlignment="Left" Height="100" Margin="351,891,0,0" VerticalAlignment="Top" Width="312" RenderTransformOrigin="0.5,0.5" TouchDown="IntoTouchDown">
                     <Grid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -1830,7 +1830,7 @@
                     <ImageBrush ImageSource="野草之智（待机页是一个视频）/智小标题.png"/>
                 </Grid.Background>
             </Grid>
-            <Grid x:Name="grid11" HorizontalAlignment="Left" Height="32" Margin="1728,106.5,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="0.5,0.5">
+            <Grid x:Name="grid11" HorizontalAlignment="Left" Height="32" Margin="1728,106.5,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="0.5,0.5" TouchDown="backTouchDown">
                 <Grid.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -1844,6 +1844,9 @@
                 </Grid.Background>
             </Grid>
         </Grid>
+        <MediaElement x:Name="bg" HorizontalAlignment="Left" Height="100" Margin="-234.783,534.582,0,0" VerticalAlignment="Top" Width="100" Source="草2.mp3" LoadedBehavior="Manual" MediaEnded="bgmediaended"/>
+        <MediaElement x:Name="bg_Into" HorizontalAlignment="Left" Height="100" Margin="-234.783,534.582,0,0" VerticalAlignment="Top" Width="100" Source="按钮/点击进入音效.mp3" LoadedBehavior="Manual" MediaEnded="bgmediaended"/>
+        <MediaElement x:Name="bg_Back" HorizontalAlignment="Left" Height="100" Margin="-234.783,534.582,0,0" VerticalAlignment="Top" Width="100" Source="按钮/返回音效.mp3" LoadedBehavior="Manual" MediaEnded="bgmediaended"/>
 
     </Grid>
 </Window>

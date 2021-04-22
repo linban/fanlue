@@ -95,6 +95,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Cover.avi" />
+    <Resource Include="闻香识草（无待机页）\紫苏问题.png" />
+    <Resource Include="闻香识草（无待机页）\天名精问题.png" />
+    <Resource Include="闻香识草（无待机页）\水蓼问题.png" />
+    <Resource Include="闻香识草（无待机页）\水芹问题.png" />
+    <Resource Include="闻香识草（无待机页）\鸡矢藤问题.png" />
+    <Resource Include="闻香识草（无待机页）\薤白问题.png" />
     <Resource Include="闻香识草（无待机页）\微信图片_20210324001212.png" />
     <Resource Include="闻香识草（无待机页）\天名精tu.png" />
     <Resource Include="闻香识草（无待机页）\天名精zi.png" />

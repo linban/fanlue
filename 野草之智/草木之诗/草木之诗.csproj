@@ -95,6 +95,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Cover.avi" />
+    <Content Include="按钮\点击进入音效.mp3" />
+    <Content Include="按钮\返回音效.mp3" />
+    <Content Include="草2.mp3" />
     <Resource Include="野草之智（待机页是一个视频）\back.png" />
     <Resource Include="野草之智（待机页是一个视频）\圆角矩形 580.png" />
     <Resource Include="野草之智（待机页是一个视频）\智小标题.png" />

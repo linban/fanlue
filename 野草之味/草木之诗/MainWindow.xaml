@@ -801,7 +801,7 @@
                 </Grid>
             </Grid>-->
             <MediaElement x:Name="mediaElement" HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920" Source="Cover.avi" Position="0" MediaEnded="mediaended" LoadedBehavior="Manual"/>
-            <Grid x:Name="grid17" HorizontalAlignment="Left" Height="100" Margin="807.197,762.353,0,0" VerticalAlignment="Top" Width="313">
+            <Grid x:Name="grid17" HorizontalAlignment="Left" Height="100" Margin="807.197,762.353,0,0" VerticalAlignment="Top" Width="313" TouchDown="IntoTouchDown">
                 <Grid.Background>
                     <ImageBrush ImageSource="野菜之味（待机页是一个视频）/首页/首页按钮.png"/>
                 </Grid.Background>
@@ -812,7 +812,7 @@
                 <Grid.Background>
                     <ImageBrush ImageSource="野菜之味（待机页是一个视频）/目录背景.png"/>
                 </Grid.Background>
-                <Grid x:Name="grid" HorizontalAlignment="Left" Height="417" Margin="300.577,346,0,0" VerticalAlignment="Top" Width="374" RenderTransformOrigin="0.5,0.5">
+                <Grid x:Name="grid" HorizontalAlignment="Left" Height="417" Margin="300.577,346,0,0" VerticalAlignment="Top" Width="374" RenderTransformOrigin="0.5,0.5" TouchDown="IntoTouchDown">
                     <Grid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -825,7 +825,7 @@
                         <ImageBrush ImageSource="野菜之味（待机页是一个视频）/鼠麹草ml.png"/>
                     </Grid.Background>
                 </Grid>
-                <Grid x:Name="grid1" HorizontalAlignment="Left" Height="430" Margin="750.635,333,0,0" VerticalAlignment="Top" Width="407" RenderTransformOrigin="0.5,0.5">
+                <Grid x:Name="grid1" HorizontalAlignment="Left" Height="430" Margin="750.635,333,0,0" VerticalAlignment="Top" Width="407" RenderTransformOrigin="0.5,0.5" TouchDown="IntoTouchDown">
                     <Grid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -838,7 +838,7 @@
                         <ImageBrush ImageSource="野菜之味（待机页是一个视频）/繁缕ml.png"/>
                     </Grid.Background>
                 </Grid>
-                <Grid x:Name="grid2" HorizontalAlignment="Left" Height="423" Margin="1236.745,333,0,0" VerticalAlignment="Top" Width="387" RenderTransformOrigin="0.5,0.5">
+                <Grid x:Name="grid2" HorizontalAlignment="Left" Height="423" Margin="1236.745,333,0,0" VerticalAlignment="Top" Width="387" RenderTransformOrigin="0.5,0.5" TouchDown="IntoTouchDown">
                     <Grid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -865,7 +865,7 @@
                     <ImageBrush ImageSource="野菜之味（待机页是一个视频）/味小标题.png"/>
                 </Grid.Background>
             </Grid>
-            <Grid x:Name="grid9" HorizontalAlignment="Left" Height="32" Margin="1728,106.5,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="0.5,0.5">
+            <Grid x:Name="grid9" HorizontalAlignment="Left" Height="32" Margin="1728,106.5,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="0.5,0.5" TouchDown="backTouchDown">
                 <Grid.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -923,7 +923,7 @@
                         <ImageBrush ImageSource="野菜之味（待机页是一个视频）/鼠麹草zi.png"/>
                     </Grid.Background>
                 </Grid>
-                <Grid x:Name="grid15" HorizontalAlignment="Left" Height="100" Margin="351,891,0,0" VerticalAlignment="Top" Width="312" RenderTransformOrigin="0.5,0.5">
+                <Grid x:Name="grid15" HorizontalAlignment="Left" Height="100" Margin="351,891,0,0" VerticalAlignment="Top" Width="312" RenderTransformOrigin="0.5,0.5" TouchDown="IntoTouchDown">
                     <Grid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -950,7 +950,7 @@
                     </Grid.Background>
                 </Grid>
             </Grid>
-            <Grid x:Name="grid5" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920" d:IsHidden="True">
+            <Grid x:Name="grid5" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920">
                 <Grid x:Name="grid21" HorizontalAlignment="Left" Height="634" Margin="309,123,0,0" VerticalAlignment="Top" Width="730" RenderTransformOrigin="0.788,1.002">
                     <Grid.RenderTransform>
                         <TransformGroup>
@@ -990,7 +990,7 @@
                         <ImageBrush ImageSource="野菜之味（待机页是一个视频）/繁缕zi.png"/>
                     </Grid.Background>
                 </Grid>
-                <Grid x:Name="grid19" HorizontalAlignment="Left" Height="100" Margin="351,891,0,0" VerticalAlignment="Top" Width="312" RenderTransformOrigin="0.5,0.5">
+                <Grid x:Name="grid19" HorizontalAlignment="Left" Height="100" Margin="351,891,0,0" VerticalAlignment="Top" Width="312" RenderTransformOrigin="0.5,0.5" TouchDown="IntoTouchDown">
                     <Grid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -1009,7 +1009,7 @@
                     </Grid.Background>
                 </Grid>
             </Grid>
-            <Grid x:Name="grid6" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920" d:IsHidden="True">
+            <Grid x:Name="grid6" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920">
                 <Grid x:Name="grid26" HorizontalAlignment="Left" Height="634" Margin="309,123,0,0" VerticalAlignment="Top" Width="730" RenderTransformOrigin="0.785,1.008">
                     <Grid.RenderTransform>
                         <TransformGroup>
@@ -1049,7 +1049,7 @@
                         <ImageBrush ImageSource="野菜之味（待机页是一个视频）/南苜蓿zi.png"/>
                     </Grid.Background>
                 </Grid>
-                <Grid x:Name="grid24" HorizontalAlignment="Left" Height="100" Margin="351,891,0,0" VerticalAlignment="Top" Width="312" RenderTransformOrigin="0.5,0.5">
+                <Grid x:Name="grid24" HorizontalAlignment="Left" Height="100" Margin="351,891,0,0" VerticalAlignment="Top" Width="312" RenderTransformOrigin="0.5,0.5" TouchDown="IntoTouchDown">
                     <Grid.RenderTransform>
                         <TransformGroup>
                             <ScaleTransform/>
@@ -1081,7 +1081,7 @@
                     <ImageBrush ImageSource="野菜之味（待机页是一个视频）/味小标题.png"/>
                 </Grid.Background>
             </Grid>
-            <Grid x:Name="grid11" HorizontalAlignment="Left" Height="32" Margin="1728,106.5,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="0.5,0.5">
+            <Grid x:Name="grid11" HorizontalAlignment="Left" Height="32" Margin="1728,106.5,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="0.5,0.5" TouchDown="backTouchDown">
                 <Grid.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
@@ -1095,6 +1095,9 @@
                 </Grid.Background>
             </Grid>
         </Grid>
+        <MediaElement x:Name="bg" HorizontalAlignment="Left" Height="100" Margin="-220,492,0,0" VerticalAlignment="Top" Width="100" Source="草1.mp3" LoadedBehavior="Manual" MediaEnded="bgmediaended"/>
+        <MediaElement x:Name="bg_Into" HorizontalAlignment="Left" Height="100" Margin="-220,712,0,0" VerticalAlignment="Top" Width="100" Source="按钮/点击进入音效.mp3" LoadedBehavior="Manual" MediaEnded="bgmediaended"/>
+        <MediaElement x:Name="bg_Back" HorizontalAlignment="Left" Height="100" Margin="-220,940,0,0" VerticalAlignment="Top" Width="100" Source="按钮/返回音效.mp3" LoadedBehavior="Manual" MediaEnded="bgmediaended"/>
 
     </Grid>
 </Window>

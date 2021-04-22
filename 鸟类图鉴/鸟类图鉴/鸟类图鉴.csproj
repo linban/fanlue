@@ -111,7 +111,6 @@
     <Resource Include="鸟类图鉴\目录\选项位置参考.png" />
     <Resource Include="鸟类图鉴\目录\页面元素1.png" />
     <Resource Include="鸟类图鉴\详情\卷羽鹈鹕t.png" />
-    <Resource Include="鸟类图鉴\详情\卷羽鹈鹕z.png" />
     <Resource Include="鸟类图鉴\详情\小䴙䴘t.png" />
     <Resource Include="鸟类图鉴\详情\小䴙䴘z.png" />
     <Resource Include="鸟类图鉴\详情\小鸟装饰.png" />
@@ -122,7 +121,6 @@
     <Resource Include="鸟类图鉴\详情\白秋沙鸭t.png" />
     <Resource Include="鸟类图鉴\详情\白秋沙鸭z.png" />
     <Resource Include="鸟类图鉴\详情\绿头鸭t.png" />
-    <Resource Include="鸟类图鉴\详情\绿头鸭z.png" />
     <Resource Include="鸟类图鉴\详情\背景.png" />
     <Resource Include="鸟类图鉴\详情\苇鹀t.png" />
     <Resource Include="鸟类图鉴\详情\苇鹀z.png" />
@@ -150,6 +148,10 @@
     <Resource Include="鸟类图鉴\首页\首页按钮.png" />
     <Resource Include="鸟类图鉴\首页\首页效果图.png" />
     <Resource Include="鸟类图鉴\首页\首页标题.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="鸟类图鉴\详情\卷羽鹈鹕z.png" />
+    <Resource Include="鸟类图鉴\详情\绿头鸭z.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -24,12 +24,31 @@ namespace 草木之诗
         {
             InitializeComponent();
             mediaElement.Play();
+            bg.Play();
         }
 
         private void mediaended(object sender, RoutedEventArgs e)
         {
             mediaElement.Stop();
             mediaElement.Play();
+        }
+
+        private void bgmediaended(object sender, RoutedEventArgs e)
+        {
+            bg.Stop();
+            bg.Play();
+        }
+
+        private void IntoTouchDown(object sender, TouchEventArgs e)
+        {
+            bg_Into.Stop();
+            bg_Into.Play();
+        }
+
+        private void backTouchDown(object sender, TouchEventArgs e)
+        {
+            bg_Back.Stop();
+            bg_Back.Play();
         }
     }
 }

@@ -617,7 +617,7 @@
             <Grid HorizontalAlignment="Center" Height="76" Margin="444,252,474,0" VerticalAlignment="Top" Width="1002" Background="{x:Null}">
                 <Grid HorizontalAlignment="Left" Height="42" Margin="77,124,0,-90" VerticalAlignment="Top" Width="691">
                     <Grid.Background>
-                        <ImageBrush ImageSource="闻香识草（无待机页）/四种植物中哪种闻起来有胡椒的味道？.png"/>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/水蓼问题.png"/>
                     </Grid.Background>
                     <Grid x:Name="grid35" HorizontalAlignment="Left" Height="100" Margin="747,-27,-369,-31" VerticalAlignment="Top" Width="313" RenderTransformOrigin="0.5,0.5" TouchDown="Plant0">
                         <Grid.RenderTransform>
@@ -635,7 +635,7 @@
                 </Grid>
                 <Grid HorizontalAlignment="Left" Height="42" Margin="77,215.5,0,-181.5" VerticalAlignment="Top" Width="607">
                     <Grid.Background>
-                        <ImageBrush ImageSource="闻香识草（无待机页）/四种植物中哪种闻起来非常冲呛？.png"/>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/天名精问题.png"/>
                     </Grid.Background>
                     <Grid x:Name="grid36" HorizontalAlignment="Left" Height="100" Margin="747.5,-25.5,-495.5,-32.5" VerticalAlignment="Top" Width="313" RenderTransformOrigin="0.5,0.5" TouchDown="Plant1">
                         <Grid.RenderTransform>
@@ -653,7 +653,7 @@
                 </Grid>
                 <Grid HorizontalAlignment="Left" Height="42" Margin="77,305.5,0,-271.5" VerticalAlignment="Top" Width="607">
                     <Grid.Background>
-                        <ImageBrush ImageSource="闻香识草（无待机页）/四种植物中哪种闻起来比较清淡？.png"/>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/紫苏问题.png"/>
                     </Grid.Background>
                     <Grid x:Name="grid37" HorizontalAlignment="Left" Height="100" Margin="748.5,-24,-454.5,-34" VerticalAlignment="Top" Width="313" RenderTransformOrigin="0.5,0.5" TouchDown="Plant2">
                         <Grid.RenderTransform>
@@ -669,7 +669,7 @@
                         </Grid.Background>
                     </Grid>
                 </Grid>
-                <Grid HorizontalAlignment="Left" Height="42" Margin="77,398.5,0,-364.5" VerticalAlignment="Top" Width="607">
+                <Grid HorizontalAlignment="Left" Height="42" Margin="77,398.5,0,-364.5" VerticalAlignment="Top" Width="607" Visibility="Hidden">
                     <Grid.Background>
                         <ImageBrush ImageSource="闻香识草（无待机页）/四种植物中哪种闻起来香味浓郁？.png"/>
                     </Grid.Background>
@@ -689,7 +689,7 @@
                 </Grid>
             </Grid>
         </Grid>
-        <Grid x:Name="ReadQuestion" HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920" Grid.ColumnSpan="2" d:IsHidden="True">
+        <Grid x:Name="ReadQuestion" HorizontalAlignment="Left" Height="1080" VerticalAlignment="Top" Width="1920" Grid.ColumnSpan="2">
             <Grid.Background>
                 <ImageBrush ImageSource="闻香识草（无待机页）/背景.png"/>
             </Grid.Background>
@@ -752,20 +752,20 @@
             <Grid x:Name="Pic" HorizontalAlignment="Left" Height="1080" Margin="0" VerticalAlignment="Top" Width="1920">
                 <Grid x:Name="grid39" HorizontalAlignment="Left" Height="42" Margin="648,413,0,625" VerticalAlignment="Center" Width="691">
                     <Grid.Background>
-                        <ImageBrush ImageSource="闻香识草（无待机页）/四种植物中哪种闻起来有胡椒的味道？.png"/>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/水蓼问题.png"/>
                     </Grid.Background>
                 </Grid>
                 <Grid x:Name="grid40" HorizontalAlignment="Left" Height="42" Margin="648,413,0,625" VerticalAlignment="Center" Width="607">
                     <Grid.Background>
-                        <ImageBrush ImageSource="闻香识草（无待机页）/四种植物中哪种闻起来非常冲呛？.png"/>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/天名精问题.png"/>
                     </Grid.Background>
                 </Grid>
                 <Grid x:Name="grid41" HorizontalAlignment="Left" Height="42" Margin="648,413,0,625" VerticalAlignment="Center" Width="607">
                     <Grid.Background>
-                        <ImageBrush ImageSource="闻香识草（无待机页）/四种植物中哪种闻起来比较清淡？.png"/>
+                        <ImageBrush ImageSource="闻香识草（无待机页）/紫苏问题.png"/>
                     </Grid.Background>
                 </Grid>
-                <Grid x:Name="grid42" HorizontalAlignment="Left" Height="42" Margin="648,413,0,625" VerticalAlignment="Center" Width="607">
+                <Grid x:Name="grid42" HorizontalAlignment="Left" Height="42" Margin="648,413,0,625" VerticalAlignment="Center" Width="607" Visibility="Hidden">
                     <Grid.Background>
                         <ImageBrush ImageSource="闻香识草（无待机页）/四种植物中哪种闻起来香味浓郁？.png"/>
                     </Grid.Background>
@@ -802,7 +802,7 @@
                         </Grid.Background>
                     </Grid>
                 </Grid>
-                <Grid x:Name="grid50" HorizontalAlignment="Left" Height="50" Margin="1080,605,0,425" VerticalAlignment="Center" Width="143" TouchDown="MyPlant3">
+                <Grid x:Name="grid50" HorizontalAlignment="Left" Height="50" Margin="1080,605,0,425" VerticalAlignment="Center" Width="143" TouchDown="MyPlant3" Visibility="Hidden">
                     <Grid.Background>
                         <ImageBrush ImageSource="闻香识草（无待机页）/植物D.png"/>
                     </Grid.Background>

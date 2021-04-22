@@ -95,8 +95,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Cover.avi" />
-    <Resource Include="野菜之味（待机页是一个视频）\back.png" />
+    <Content Include="按钮\点击进入音效.mp3" />
+    <Content Include="按钮\返回音效.mp3" />
+    <Content Include="草1.mp3" />
+    <Resource Include="野菜之味（待机页是一个视频）\鼠麹草zi.png" />
     <Resource Include="野菜之味（待机页是一个视频）\南苜蓿ml.png" />
+    <Resource Include="野菜之味（待机页是一个视频）\繁缕ml.png" />
+    <Resource Include="野菜之味（待机页是一个视频）\鼠麹草ml.png" />
+    <Resource Include="野菜之味（待机页是一个视频）\back.png" />
     <Resource Include="野菜之味（待机页是一个视频）\南苜蓿tu1.png" />
     <Resource Include="野菜之味（待机页是一个视频）\南苜蓿tu2.png" />
     <Resource Include="野菜之味（待机页是一个视频）\南苜蓿zi.png" />
@@ -106,7 +112,6 @@
     <Resource Include="野菜之味（待机页是一个视频）\目录背景.png" />
     <Resource Include="野菜之味（待机页是一个视频）\看整体.png" />
     <Resource Include="野菜之味（待机页是一个视频）\看细节.png" />
-    <Resource Include="野菜之味（待机页是一个视频）\繁缕ml.png" />
     <Resource Include="野菜之味（待机页是一个视频）\繁缕tu1.png" />
     <Resource Include="野菜之味（待机页是一个视频）\繁缕tu2.png" />
     <Resource Include="野菜之味（待机页是一个视频）\繁缕zi.png" />
@@ -134,10 +139,8 @@
     <Resource Include="野菜之味（待机页是一个视频）\首页\首页按钮.png" />
     <Resource Include="野菜之味（待机页是一个视频）\首页\首页标题.png" />
     <Resource Include="野菜之味（待机页是一个视频）\首页效果图.png" />
-    <Resource Include="野菜之味（待机页是一个视频）\鼠麹草ml.png" />
     <Resource Include="野菜之味（待机页是一个视频）\鼠麹草tu1.png" />
     <Resource Include="野菜之味（待机页是一个视频）\鼠麹草tu2.png" />
-    <Resource Include="野菜之味（待机页是一个视频）\鼠麹草zi.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
